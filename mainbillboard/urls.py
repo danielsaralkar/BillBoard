@@ -2,8 +2,8 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    # ex: /polls/
-    url(r'^$', views.get_data),
-    # ex: /polls/5/
-    url(r'^addpost', views.add_post),
+    # ex: /
+    url(r'^$', views.get_data, name='index'),
+    # ex: /add_post
+    url(r'^add_post', views.add_post, name='add_post'),
 ]
